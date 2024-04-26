@@ -167,51 +167,7 @@
     <div class="center">
         <div class="rotation">
             <img src="images/360/01.png">
-            <img src="images/360/02.png">
-            <img src="images/360/03.png">
-            <img src="images/360/04.png">
-            <img src="images/360/05.png">
-            <img src="images/360/06.png">
-            <img src="images/360/07.png">
-            <img src="images/360/08.png">
-            <img src="images/360/09.png">
-            <img src="images/360/10.png">
-            <img src="images/360/11.png">
-            <img src="images/360/12.png">
-            <img src="images/360/13.png">
-            <img src="images/360/14.png">
-            <img src="images/360/15.png">
-            <img src="images/360/16.png">
-            <img src="images/360/17.png">
-            <img src="images/360/18.png">
-            <img src="images/360/19.png">
-            <img src="images/360/20.png">
-            <img src="images/360/21.png">
-            <img src="images/360/22.png">
-            <img src="images/360/23.png">
-            <img src="images/360/24.png">
-            <img src="images/360/25.png">
-            <img src="images/360/26.png">
-            <img src="images/360/27.png">
-            <img src="images/360/28.png">
-            <img src="images/360/29.png">
-            <img src="images/360/30.png">
-            <img src="images/360/31.png">
-            <img src="images/360/32.png">
-            <img src="images/360/33.png">
-            <img src="images/360/34.png">
-            <img src="images/360/35.png">
-            <img src="images/360/36.png">
-            <img src="images/360/37.png">
-            <img src="images/360/38.png">
-            <img src="images/360/39.png">
-            <img src="images/360/40.png">
-            <img src="images/360/41.png">
-            <img src="images/360/42.png">
-            <img src="images/360/43.png">
-            <img src="images/360/44.png">
-            <img src="images/360/45.png">
-            <img src="images/360/46.png">
+            <!-- Adicione suas outras imagens aqui -->
         </div>
     </div>
 </div>
@@ -224,31 +180,6 @@
         if (loadingOverlay) {
             loadingOverlay.style.display = 'none';
         }
-    });
-
-    // Função para calcular e exibir o progresso do carregamento
-    window.addEventListener('DOMContentLoaded', function() {
-        var images = document.querySelectorAll('.rotation img');
-        var loadedCount = 0;
-
-        function updateProgress() {
-            loadedCount++;
-            var progress = Math.round((loadedCount / images.length) * 100);
-            document.getElementById('loading-progress').textContent = progress + '%';
-
-            if (loadedCount === images.length) {
-                // Todas as imagens foram carregadas
-                var loadingOverlay = document.querySelector('.loading-overlay');
-                if (loadingOverlay) {
-                    loadingOverlay.style.display = 'none';
-                }
-            }
-        }
-
-        Array.from(images).forEach(function(img) {
-            img.addEventListener('load', updateProgress);
-            img.addEventListener('error', updateProgress);
-        });
     });
 </script>
 
